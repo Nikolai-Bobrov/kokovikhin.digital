@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Константин Коковихин</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <link rel="apple-touch-icon shortcut icon" href="/apple-touch-icon.png" >
+    <link rel="apple-touch-icon shortcut icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon shortcut icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon shortcut icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="libs/accordion.min.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-container">
+            <div class="logo">
+                <svg viewBox="0 0 284 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_11)">
+                        <path d="M0.645264 -3.05176e-05V54.733H55.4212V-3.05176e-05H0.645264ZM51.1213 14.5863L40.6865 4.29653H51.0118L51.1213 14.5863ZM48.8481 18.3903L18.9678 48.083L7.10883 36.2333L36.8796 6.45847L48.8481 18.3903ZM33.1 4.29653L4.83562 32.5114V4.29653H33.1ZM4.83562 40.1193L15.1609 50.4365H4.83562V40.1193ZM22.7748 50.4365L51.0118 22.1942V50.4365H22.7748Z" fill="black"/>
+                        <path d="M100.31 24.3289H92.8605L87.7116 16.5294L85.7397 18.2261V24.3289H79.6595V-2.65721e-05H85.7397V12.3423L92.0937 6.07535H99.6254L91.7376 13.0265L100.31 24.3289ZM145.61 24.3289H138.133L132.984 16.5294L131.012 18.2261V24.3289H124.932V-2.65721e-05H131.012V12.3423L137.366 6.07535H144.925L137.037 13.0265L145.61 24.3289ZM174.723 24.3289L167.301 6.07535H173.682L176.01 13.0538C176.449 14.34 176.942 16.0915 177.626 18.3082C178.119 16.2831 178.612 14.1485 178.914 13.0538L181.022 6.07535H187.541L180.502 24.3289H174.723ZM195.346 4.40599H189.266V-2.65721e-05H195.346V4.40599ZM195.346 24.3289H189.266V6.07535H195.346V24.3289ZM219.996 24.3289H212.628L207.479 16.5294L205.507 18.2261V24.3289H199.427V-2.65721e-05H205.507V12.3423L211.861 6.07535H219.393L211.533 13.0265L219.996 24.3289ZM227.692 7.63526C229.184 6.26991 231.147 5.5344 233.169 5.58277C235.13 5.51743 237.039 6.22512 238.482 7.55316C239.174 8.27435 239.699 9.13806 240.021 10.0836C240.342 11.0292 240.453 12.0336 240.345 13.0265V24.2467H234.237V14.0117C234.397 12.9492 234.153 11.8654 233.553 10.974C233.246 10.6567 232.874 10.4093 232.463 10.2487C232.052 10.0881 231.611 10.0181 231.17 10.0435C230.176 9.99365 229.2 10.3156 228.431 10.9466C227.746 11.576 227.609 12.1234 227.609 14.0117V24.2467H221.529V-0.0821228H227.609L227.692 7.63526ZM250.506 4.40599H244.398V-2.65721e-05H250.478L250.506 4.40599ZM250.506 24.3289H244.398V6.07535H250.478L250.506 24.3289ZM260.502 6.07535V7.85419C261.24 7.11133 262.119 6.5248 263.089 6.1298C264.058 5.73479 265.097 5.53945 266.144 5.55542C267.096 5.45379 268.059 5.56122 268.966 5.87027C269.872 6.17932 270.7 6.6825 271.391 7.34458C272.082 8.00666 272.62 8.8117 272.968 9.70332C273.315 10.5949 273.463 11.5516 273.402 12.5065V24.3289H267.404V14.3948C267.404 12.5339 267.267 11.8223 266.747 11.1382C266.444 10.778 266.06 10.4939 265.628 10.3085C265.195 10.1232 264.725 10.0418 264.255 10.0709C263.292 10.0482 262.358 10.4017 261.653 11.0561C261.289 11.4658 261.02 11.95 260.864 12.4748C260.708 12.9996 260.668 13.5522 260.749 14.0938V24.3289H254.669V6.07535H260.502ZM283.453 24.3289H277.373V18.2261H283.453V24.3289ZM109.321 34.8102H103.241V30.4042H109.321V34.8102ZM109.321 54.733H103.241V36.4796H109.321V54.733ZM133.203 36.589V53.0089C133.203 55.9919 132.737 57.3328 131.286 58.4822C128.923 60.2447 126.013 61.117 123.069 60.9453C117.291 60.9453 113.812 58.8654 113.374 55.1162H119.673C120.112 56.2656 121.317 56.8129 123.316 56.8129C124.278 56.8435 125.229 56.5965 126.055 56.1013C126.959 55.4719 127.205 54.7877 127.205 52.9268V51.7227C125.706 53.0683 123.741 53.7754 121.727 53.6931C116.25 53.6931 112.388 52.0238 112.388 44.8811C112.388 37.7384 116.332 35.9322 121.563 35.9322C122.717 35.8423 123.875 36.0462 124.929 36.5248C125.982 37.0034 126.898 37.741 127.589 38.6689V36.4249L133.203 36.589ZM118.167 44.799C118.139 45.4077 118.24 46.0154 118.462 46.5828C118.684 47.1503 119.023 47.6647 119.456 48.093C119.89 48.5212 120.409 48.8537 120.98 49.0688C121.55 49.2839 122.159 49.3769 122.768 49.3418C123.665 49.331 124.539 49.0554 125.279 48.5497C126.019 48.0441 126.594 47.3309 126.929 46.4999C127.265 45.6689 127.347 44.7572 127.166 43.8797C126.984 43.0021 126.547 42.1977 125.909 41.5679C125.271 40.938 124.461 40.5107 123.58 40.3398C122.7 40.1689 121.789 40.2621 120.961 40.6075C120.134 40.9528 119.427 41.5351 118.93 42.2809C118.432 43.0267 118.167 43.9029 118.167 44.799V44.799ZM143.391 34.7555H137.284V30.3495H143.391V34.7555ZM143.391 54.6783H137.284V36.4249H143.391V54.6783ZM157.962 40.4203H154.237V47.5357C154.237 50.4091 154.237 50.628 155.771 50.628H157.962V54.6783H154.237C152.517 54.9314 150.766 54.499 149.362 53.4742C148.403 52.5437 148.157 51.5859 148.157 48.7397V40.5298H145.226V36.7532H148.157V30.4589H154.237V36.7532H157.962V40.4203ZM160.536 42.1718C160.92 37.9847 163.878 35.9322 169.711 35.9322C172.244 35.7746 174.76 36.4367 176.887 37.8205C177.649 38.4671 178.236 39.2945 178.595 40.2269C178.954 41.1593 179.073 42.1668 178.941 43.157V51.5312C178.941 53.5016 178.941 53.7752 179.708 54.6783H173.491C173.244 54.0215 173.244 53.9121 173.025 53.2279C171.36 54.5819 169.254 55.2738 167.109 55.1709C162.508 55.1709 159.468 52.8995 159.468 49.4513C159.468 46.0031 161.933 44.2516 167.685 43.4033L170.971 42.9107C172.34 42.7465 172.833 42.4455 172.833 41.6792C172.833 40.913 171.628 40.0099 169.656 40.0099C167.685 40.0099 166.233 40.694 165.959 42.1718H160.536ZM173.025 45.9757C172.297 46.2395 171.545 46.432 170.779 46.5505L168.616 46.9609C166.425 47.4262 165.466 48.0556 165.466 49.1503C165.466 50.245 166.644 51.0933 168.561 51.0933C169.446 51.1482 170.33 50.9605 171.117 50.5506C171.903 50.1407 172.563 49.5241 173.025 48.7671V45.9757ZM189.157 54.6783H183.049V30.3495H189.157V54.6783ZM99.1598 54.6783H93.3261V52.7079C92.6452 53.5465 91.7718 54.2083 90.7799 54.6371C89.7881 55.066 88.7073 55.2491 87.6294 55.1709C82.1518 55.1709 78.5366 52.8995 78.5366 45.5653C78.5366 38.231 82.234 35.9049 87.7938 35.9049C88.7567 35.8469 89.7215 35.9843 90.63 36.3088C91.5384 36.6334 92.3717 37.1383 93.0796 37.7932V30.3495H99.2419L99.1598 54.6783ZM88.9988 50.8196C91.7376 50.8196 93.3809 49.725 93.3809 45.5379C93.3809 41.3508 91.6555 40.2288 88.9988 40.2288C86.3422 40.2288 84.6168 41.3235 84.6168 45.5379C84.6168 49.7524 86.3422 50.8196 88.9988 50.8196ZM110.909 5.52802C104.473 5.52802 99.954 7.7721 99.954 15.1337C99.954 22.4953 104.5 24.7667 110.909 24.7667C117.318 24.7667 121.864 22.4679 121.864 15.1337C121.864 7.79947 117.291 5.58277 110.882 5.58277L110.909 5.52802ZM110.909 20.4975C107.76 20.4975 106.062 19.3208 106.062 15.0242C106.062 10.7277 107.814 9.68775 110.909 9.68775C114.004 9.68775 115.73 10.8098 115.73 15.0242C115.73 19.2387 114.004 20.5523 110.882 20.5523L110.909 20.4975ZM156.182 5.52802C149.745 5.52802 145.226 7.7721 145.226 15.1337C145.226 22.4953 149.773 24.7667 156.182 24.7667C162.59 24.7667 167.137 22.4679 167.137 15.1337C167.137 7.79947 162.59 5.58277 156.154 5.58277L156.182 5.52802ZM156.182 20.4975C153.059 20.4975 151.334 19.3208 151.334 15.0242C151.334 10.7277 153.087 9.68775 156.182 9.68775C159.276 9.68775 161.029 10.8098 161.029 15.0242C161.029 19.2387 159.276 20.5523 156.154 20.5523L156.182 20.4975Z" fill="black"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5_11">
+                            <rect width="283" height="61" fill="white" transform="translate(0.535645)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <nav class="nav__menu flex">
+                <ul class="menu">
+                    <li class="menu__link">
+                        <a href="">Обо мне</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="">Отзывы</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="">Клиенты</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="">Услуги и стоимость</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="">Примеры работ</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="">Отделы компании</a>
+                    </li>
+                </ul>
+
+                <div class="open-menu">
+                    <ul class="open_menu_list list-reset">
+                        <li class="open_menu__link">
+                            <a href="">Обо мне</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Отзывы</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Клиенты</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Услуги и стоимость</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Примеры работ</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Отделы компании</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Контакты</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Юридическия информация</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Партнерам</a>
+                        </li>
+                        <li class="open_menu__link">
+                            <a href="">Спецпроект</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="js-open-menu">
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2H44" stroke="black" stroke-width="3"/>
+                            <path d="M14 15L44 15" stroke="black" stroke-width="3"/>
+                            <path d="M0 28H44" stroke="black" stroke-width="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="i-am-kostya">
+
+        <div class="container">
+            <div class="row">
+                <div class="i-am-kostya__left col-lg-8 col-md-12">
+                    <div class="kostya-photo">
+                        <div class="container-cert">
+                            <img src="./img/cert-ya.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="i-am-kostya__right col-lg-4 col-md-12">
+                    <div class="about-me">
+                        <h2>Обо мне</h2>
+                        <p>
+                            Привет! Я Костя Коковихин — рекламист, творческий предприниматель в сферах:<br>
+                            IT, реклама, маркетинг, PR, образование, групповая работа с людьми. Лидер  технологической, консультационно-рекламной группировки Kokovikhin.Digital,  учредитель студии авторских подкастов Zakutokmedia, руководитель школы рекламы Селекция, эксперт Яндекса по обучению, эксперт WorldSkills (интернет-маркетинг).
+                        </p>
+                        <img src="./img/hello-hand.png" class="hello" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="i-am-kostya__wrapper">
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="container">
+        <div class="feedback__wrapper">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="feedback__title">
+                        <h2>Отзывы</h2>
+                        <h3>О моей работе от моих клиентов</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="feedback__left-list feedback__item col-lg-4 col-md-6 col-12">
+                    <ul class="left-list__list list-reset">
+                        <li class="left-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/aurora.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Аврора</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Павел Малышкин.</b>
+                                            </span>
+                                             Заместитель начальника отдела, отдел внутренних и внешних связей авиакомпании <a href="#" class="card__title-descript-name-company">Аврора</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «С Kokovikhin.digital сотрудничаем не первый год — за это время агентство полностью сопровождает наше продвижение и помогает решать маркетинговые вопросы. Вместе с командой Kokovikhin.digital запускаем таргетированную рекламу на рейсы, набирали первую тысячу подписчиков в Телеграм-канале, создаём новостные повестки в соцсетях и налаживаем контакт с подписчиками. Специалисты агентства грамотно подходят к решению задач: всегда подскажут нужное направление работы, дадут советы и
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="left-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_lexus.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Тойота, Лексус, Владивосток</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Анастасия Бушуева.</b>
+                                            </span>
+                                             Ведущий специалист отдела рекламы и маркетинга ЗАО<a href="#" class="card__title-descript-name-company">«Саммит Моторс»</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «С Константином мы сотрудничаем с 2013 года. Вместе работаем над контекстной рекламой в Яндекс, Google. Первые результаты сотрудничества превзошли наши ожидания как минимум втрое. Благодаря грамотной настройке контекстной рекламы мы повысили количество конверсий, оптимизировали нужные нам цели, получили низкую стоимость заказа.
+                                        Также приятно, что Константин оперативно отвечает на все наши вопросы и выполняет задачи в срок, где бы он не находился. Константин, как наш бизнес-
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feedback__center-list feedback__item col-lg-4 col-md-6 col-12">
+                    <ul class="center-list__list list-reset">
+                        <li class="center-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_zuma.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Zuma</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Настя Дегтярёва.</b>
+                                            </span>
+                                             PR-менеджер ресторана   <a href="#" class="card__title-descript-name-company">Zuma</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «Очень рада знакомству с Константином! Работать с ним одно удовольствие, всегда максимально подробно всё расскажет и покажет. А самое приятное — видеть результат проделанной работы благодаря Косте!»
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="center-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_gosteva.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Gosteva.Design</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Женя Гостева.</b>
+                                            </span>
+                                             Архитектурный дизайнер в <a href="#" class="card__title-descript-name-company">Gosteva.Design </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «Очень рада знакомству с Костей! Огромное спасибо за необычный подход к обычным задачам. Видение, предложенное Костей, открыло новые грани продвижения моего дела. Прислушиваюсь, доверяю во всех идеях и планирую дальнейшую работу».
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="center-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_mitasu.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Автосервис «Митасу сервис»</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Олеся Фролова.</b>
+                                            </span>
+                                            Руководитель  <a href="#" class="card__title-descript-name-company">Митасу сервис</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «Работаем с Константином Коковихиным уже 5 лет. Благодарю Константина за отзывчивость, вовлечённость и искреннюю заинтересованность в нашем бизнесе».
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feedback__right-list feedback__item col-md-6 col-lg-4 col-12">
+                    <ul class="right-list__list list-reset">
+                        <li class="right-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_fefu.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Дальневосточный федеральный университет</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Ян Гарянин.</b>
+                                            </span>
+                                             Начальник отдела рекламы Департамента имиджевой политики <a href="#" class="card__title-descript-name-company">ДВФУ</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        «Мы сотрудничаем с Константином с 2012 года со времён его работы в агентстве «Точно!». За это время мы реализовали множество эффективных рекламных кампаний: от небольших, направленных на рекламу конкретных направлений обучения в поисковых системах до крупных сезонных, направленных на привлечение абитуриентов и охватывающих несколько федеральных округов России, стран СНГ, Азию и Южную Америку. В кампаниях по привлечению абитуриентов мы
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right-list__item">
+                            <div class="card">
+                                <div class="card__title flex">
+                                    <img class="card__title-img" src="img/feedback_allazia%2010.png" alt="">
+                                    <div class="card__title-descript">
+                                        <h3 class="card__title-descript-title">Аллазия — лечение за рубежом</h3>
+                                        <p class="card__title-descript-info-user">
+                                            <span class="card__title-descript-name-user">
+                                                <b>Елена Ким.</b>
+                                            </span>
+                                             Владелица компании  <a href="#" class="card__title-descript-name-company">«Аллазия»</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__feedback-text">
+                                    <p class="feedback-text__text">
+                                        Константин, на мой взгляд, самый лучший специалист по интернет-продвижению на Дальнем Востоке. Мы работаем с ним и его командой уже шестой год и очень довольны результатом. Да, Константин берёт не три копейки, но специалисты высокого уровня не могут быть дешёвыми.
+                                        За время работы с Константином и его командой нам удалось выйти на первую страницу в естественной выдаче в Яндексе, улучшить позиции сайта в Гугл и разработанная ими контекстная рекламная кампания даёт хорошую конверсию. Через нас прошло много специалистов по интернет-
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="container">
+        <div class="row">
+            <h2>Клиенты</h2>
+            <h3>Клиенты дают мне главное — возможность быть лучше.</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="swiper swiper__clients">
+                    <!-- Additional required wrapper -->
+
+
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/admiral.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/arena_sporta.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/aurora.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/fefu.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/geometria_fitnes.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/gosteva.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/kovcheg.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/lexus.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/loftcraft.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/mitasu.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/royal_park.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/rts_tur.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/toyota.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/tuk.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/varka.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/vmtp.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/world_class.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide col-md-3">
+                            <img class="clients__img" src="img/carusel_logo/zuma.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-btn-prev">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M43.0714 23.0001C43.0714 34.3416 33.8773 43.5358 22.5357 43.5358C11.1942 43.5358 2 34.3416 2 23.0001C2 11.6585 11.1942 2.46436 22.5357 2.46435C33.8773 2.46435 43.0714 11.6585 43.0714 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.7848 23L13.2866 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.9268 30.7378C16.9561 28.3867 15.5737 26.7853 13.7657 24.3988C13.1259 23.5544 13.1259 22.4465 13.7657 21.6021C15.5737 19.2156 16.9561 17.6142 19.9268 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-btn-next">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.99998 23.0001C1.99998 34.3416 11.1941 43.5358 22.5357 43.5358C33.8773 43.5358 43.0714 34.3416 43.0714 23.0001C43.0714 11.6585 33.8773 2.46436 22.5357 2.46435C11.1941 2.46435 1.99998 11.6585 1.99998 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2866 23L31.7848 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25.1444 30.7378C28.115 28.3867 29.4975 26.7853 31.3055 24.3988C31.9452 23.5544 31.9452 22.4465 31.3055 21.6021C29.4975 19.2156 28.115 17.6142 25.1444 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <h2>Услуги и стоимость</h2>
+        </div>
+        <div class="row">
+            <div class="services__tabs">
+                <ul class="tabs__list list-reset flex">
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-services tabs__btn-services--active" data-tabsservices="tehnology">Технологии</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-services" data-tabsservices="consalting">Консалтинг</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-services" data-tabsservices="advertisement">Реклама</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="services__accordion ">
+                <div class="accordion-list accordion-list--active list" data-services="tehnology">
+                    <div class="list__item accordion flex js-enabled" id="ac-0">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Разработка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                        <p class="accordion-items__text">
+                                            Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                        </p>
+                                        <p class="accordion-items__text">
+                                            Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                        </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-1">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-1" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Техническая поддержка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-1" role="region" aria-labelledby="ac-trigger-1" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-2">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Настройка и проверка счётчиков посещаемости</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-3">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Статистика, аналитика и отчётность</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-list accordion-list-consalting list" data-services="consalting">
+                    <div class="list__item accordion flex js-enabled" id="ac-0">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Разработка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-1">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-1" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Техническая поддержка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-1" role="region" aria-labelledby="ac-trigger-1" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-2">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Настройка и проверка счётчиков посещаемости</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-3">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Статистика, аналитика и отчётность</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-list accordion-list-advertisement list" data-services="advertisement">
+                    <div class="list__item accordion flex js-enabled" id="ac-0">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Разработка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-1">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-1" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Техническая поддержка</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-1" role="region" aria-labelledby="ac-trigger-1" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-2">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Настройка и проверка счётчиков посещаемости</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="list__item accordion flex js-enabled" id="ac-3">
+                        <button class="accordion__control accordion__control-first flex btn-reset" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">
+                            <p class="questions__text__text">Статистика, аналитика и отчётность</p>
+
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5357 2.00011C33.8773 2.00011 43.0714 11.1943 43.0714 22.5358C43.0714 33.8774 33.8773 43.0715 22.5357 43.0715C11.1942 43.0715 2 33.8774 2 22.5358C2 11.1943 11.1942 2.00011 22.5357 2.00011Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30.2734 19.895C27.9223 22.8657 26.3209 24.2481 23.9344 26.0561C23.09 26.6959 21.9822 26.6959 21.1377 26.0561C18.7512 24.2481 17.1499 22.8657 14.7987 19.895" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="accordion__content" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
+                            <ul class="accordion__content-list list-reset flex">
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Что делаем
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Разрабатываем, систематизируем, программируем сложные технические решения для оптимизации, автоматизации бизнес-процессов, используя веб-технологии. Визуализируем технические решения (дизайн). Визуализируем интерфейсы, веб-сайты, веб-приложения, процессы.
+                                    </p>
+                                </li>
+                                <li class="accordion__list-items col-lg-4 col-md-4 col-12">
+                                    <p class="accordion-items__title">
+                                        Примеры работ
+                                    </p>
+
+                                    <p class="accordion-items__text">
+                                        Создаём веб-приложение (веб-сайт) как часть бизнес-процессов: allasia.su, royalparkvl.ru.
+                                    </p>
+                                    <p class="accordion-items__text">
+                                        Проектируем и программируем сценарии общения людей с чат-ботом на сайте mitasuvl.ru
+                                    </p>
+
+                                </li>
+                                <li class="accordion__list-items col-lg-2 col-md-2 col-12">
+                                    <p class="accordion-items__title">
+                                        Стоимость
+                                    </p>
+                                    <p class="accordion-items__text-price">
+                                        3000₽/час
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reliably">
+    <div class="container">
+        <div class="row">
+            <h2>Работаем надёжно и вот почему</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="reliably__card col-lg-8 col-md-10 col-sm-10 col-11 reliably__card-bg-img">
+                <p>
+                    <span><b>Во-первых,</b></span> у нас есть видение: «Польза = прибыли, а прибыль зависит от качества. Теряешь в качестве — теряешь в прибыли. Хорошо людям внутри компании — хорошо клиентам. А когда людям хорошо, тогда и прибыль есть».
+                </p>
+                <p>
+                    <span>Во-вторых,</span> у нас прямые руки и растут они из правильного места.
+                </p>
+                <p>
+                    <span>В-третьих,</span> голова на плечах имеется.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="reliably__description col-lg-7 col-md-10 col-sm-10 col-11">
+                <p>
+                    В труде руководствуемся инженерно-научным подходом. Пропагандируем систематизацию, схематизацию, визуализацию, стандартизацию, автоматизацию и грудью стоим за маркетинг, основанный на данных и подкреплённый интуицией.
+                </p>
+                <p>
+                    Избегаем водянисто-непонятного термина «инновации» — вместо него мыслим понятием «предпринимательство».
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="examples">
+    <div class="container">
+        <div class="row">
+            <div class="examples__title">
+                <h2>Примеры работ</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="examples__tabs">
+                <ul class="tabs__list list-reset flex">
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-examples tabs__btn-examples--active" data-tabsexamples="cientsr">Реклама и привлечение клиентов</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-examples" data-tabsexamples="webapp">Веб-приложения</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="btn tabs__btn-examples" data-tabsexamples="design">Дизайн</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="examples__contend examples__contend--active" data-services="cientsr">
+                <div class="swiper examples__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="examples__list-card ">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/examples_vladfoodie.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Фуд-блогер Vladfoodie
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        + 600 подписчиков
+                                                    </p>
+                                                    <p>
+                                                        Цена: 15₽ за подписчика
+                                                    </p>
+                                                </div>
+                                                <p class="examples__item-text">
+                                                    Результаты рекламной компании марта-апреля 2020 по продвижению контента инстаграм-аккаунта Романа Дяблова.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Посмотреть отчёт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/examples_pct.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    РСТ-тур
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Выручка залето: 8 969 319₽
+                                                    </p>
+                                                    <p>
+                                                        ROAS 3450%
+                                                    </p>
+                                                </div>
+                                                <p class="examples__item-text">
+                                                    «Российская туристическая платформа»: результаты рекламной компании по привлечение клиентов через интернет.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Посмотреть видео</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/examples_mitasu.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    СТО «Митасу Сервис»
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Итог: +191% к выручке
+                                                    </p>
+                                                </div>
+                                                <p class="examples__item-text">
+                                                    Благодаря контекстной рекламе и своевременной обработке входящих обращений.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Посмотреть статью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/examples_ratimir.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Ратимир #пикникчтонадо
+                                                </h3>
+                                                <!--                                            <div class="examples__indicators">-->
+                                                <!--                                                <p>-->
+                                                <!--                                                    + 600 подписчиков-->
+                                                <!--                                                </p>-->
+                                                <!--                                                <p>-->
+                                                <!--                                                    Цена: 15₽ за подписчика-->
+                                                <!--                                                </p>-->
+                                                <!--                                            </div>-->
+                                                <p class="examples__item-text">
+                                                    Результаты привлечения клиентов через интернет в сфере FMCG. Выступление Константина Коковихина на конференции «Яндекса» во Владивостоке в 2017 году.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Посмотреть видео</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-btn-prev-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M43.0714 23.0001C43.0714 34.3416 33.8773 43.5358 22.5357 43.5358C11.1942 43.5358 2 34.3416 2 23.0001C2 11.6585 11.1942 2.46436 22.5357 2.46435C33.8773 2.46435 43.0714 11.6585 43.0714 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.7848 23L13.2866 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.9268 30.7378C16.9561 28.3867 15.5737 26.7853 13.7657 24.3988C13.1259 23.5544 13.1259 22.4465 13.7657 21.6021C15.5737 19.2156 16.9561 17.6142 19.9268 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-btn-next-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.99998 23.0001C1.99998 34.3416 11.1941 43.5358 22.5357 43.5358C33.8773 43.5358 43.0714 34.3416 43.0714 23.0001C43.0714 11.6585 33.8773 2.46436 22.5357 2.46435C11.1941 2.46435 1.99998 11.6585 1.99998 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2866 23L31.7848 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25.1444 30.7378C28.115 28.3867 29.4975 26.7853 31.3055 24.3988C31.9452 23.5544 31.9452 22.4465 31.3055 21.6021C29.4975 19.2156 28.115 17.6142 25.1444 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="examples__contend" data-services="webapp">
+                <div class="swiper examples__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="examples__list-card ">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/allasia.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Алазия - лечение за рубежом
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Объём работы: <span class="examples__indicators-span">342 часа</span> без учета времени по заполнению сайта клиентом<br>
+                                                        Цена: <span class="examples__indicators-span">при 3000₽/час — 1 026 000₽</span> (дизайн+программирование)<br>
+                                                        <span class="examples__indicators-span">+240 000₽ за контент</span>
+                                                        Сделано: за 18 месяцев
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Перейти на сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/zakutok_midia.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Zakutok.Media
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Подготовительные работы: 8 месяцев
+                                                        Цена: бесценно и неповторимо
+                                                        Сделано: за ночь
+                                                    </p>
+                                                </div>
+                                                <p class="examples__item-text">
+                                                    Подкастерский закуток неравнодушных ребят из Владивостока.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Перейти на сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/royal_park_web.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Royal Park
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Цена: 600 000₽
+                                                    </p>
+                                                    <p>
+                                                        Актуально на 29.11.2021
+                                                    </p>
+                                                </div>
+                                                <p class="examples__item-text">
+                                                    Разработка сайта для Центра семейного отдыха, спорта и здоровья.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="examples__btn">Перейти на сайт</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-btn-prev-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M43.0714 23.0001C43.0714 34.3416 33.8773 43.5358 22.5357 43.5358C11.1942 43.5358 2 34.3416 2 23.0001C2 11.6585 11.1942 2.46436 22.5357 2.46435C33.8773 2.46435 43.0714 11.6585 43.0714 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.7848 23L13.2866 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.9268 30.7378C16.9561 28.3867 15.5737 26.7853 13.7657 24.3988C13.1259 23.5544 13.1259 22.4465 13.7657 21.6021C15.5737 19.2156 16.9561 17.6142 19.9268 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-btn-next-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.99998 23.0001C1.99998 34.3416 11.1941 43.5358 22.5357 43.5358C33.8773 43.5358 43.0714 34.3416 43.0714 23.0001C43.0714 11.6585 33.8773 2.46436 22.5357 2.46435C11.1941 2.46435 1.99998 11.6585 1.99998 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2866 23L31.7848 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25.1444 30.7378C28.115 28.3867 29.4975 26.7853 31.3055 24.3988C31.9452 23.5544 31.9452 22.4465 31.3055 21.6021C29.4975 19.2156 28.115 17.6142 25.1444 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="examples__contend" data-services="design">
+                <div class="swiper examples__swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/kokovik.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Логотип рекламно-технологической группировки KD
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея: Костя Коковихин<br>
+                                                        Дизайн: Витя Пархомчук<br>
+                                                        Цена: бесценно<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/zakutok_midia.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Логотип подкастерского лейбла Zakutokmedia
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея: Костя Коковихин<br>
+                                                        Дизайн: Лида Чапко<br>
+                                                        Цена: бесценно<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/slovo_media.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Логотип бюро слов и смыслов Slovo-Slovo!
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея: Костя Коковихин<br>
+                                                        Дизайн: Витя Пархомчук<br>
+                                                        Цена: бесценно<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/madd_media.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Логотип рекламного агентства Marketing Agency of Digital Destinations
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея: Костя Коковихин<br>
+                                                        Дизайн: Витя Пархомчук<br>
+                                                        Цена: бесценно<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/comm_media.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Логотип тренингово-игропрактической компании Comma Games
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея: Костя Коковихин<br>
+                                                        Дизайн: Витя Пархомчук<br>
+                                                        Цена: бесценно<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="examples__list-card">
+                                <div class="examples__wrap flex">
+                                    <div class="examples__up-wrap">
+                                        <img src="img/arena_media.jpg" alt="Картинка">
+                                        <div class="examples__item-wrap flex">
+                                            <div class="examples__item-prev">
+                                                <h3 class="examples__item-title">
+                                                    Шапка сайта «Арены спорта»
+                                                </h3>
+                                                <div class="examples__indicators">
+                                                    <p>
+                                                        Идея, дизайн, релизация: Миша Родштейн<br>
+                                                        Цена: 60 000 рублей<br>
+                                                        Сделано: за 20 часов<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-btn-prev-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M43.0714 23.0001C43.0714 34.3416 33.8773 43.5358 22.5357 43.5358C11.1942 43.5358 2 34.3416 2 23.0001C2 11.6585 11.1942 2.46436 22.5357 2.46435C33.8773 2.46435 43.0714 11.6585 43.0714 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.7848 23L13.2866 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.9268 30.7378C16.9561 28.3867 15.5737 26.7853 13.7657 24.3988C13.1259 23.5544 13.1259 22.4465 13.7657 21.6021C15.5737 19.2156 16.9561 17.6142 19.9268 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-btn-next-examples">
+                        <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.99998 23.0001C1.99998 34.3416 11.1941 43.5358 22.5357 43.5358C33.8773 43.5358 43.0714 34.3416 43.0714 23.0001C43.0714 11.6585 33.8773 2.46436 22.5357 2.46435C11.1941 2.46435 1.99998 11.6585 1.99998 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2866 23L31.7848 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25.1444 30.7378C28.115 28.3867 29.4975 26.7853 31.3055 24.3988C31.9452 23.5544 31.9452 22.4465 31.3055 21.6021C29.4975 19.2156 28.115 17.6142 25.1444 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team">
+    <div class="container">
+        <div class="team__wrapers">
+            <div class="row">
+                <div class="team__title">
+                    <h2>Команда KD</h2>
+                    <h3>Колеги. Друзья. Семья.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team__list flex">
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/1.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Андрей Сафаров
+                            </h3>
+                            <p>
+                                Ведущий специалист по платному трафику
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/2.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Наталья Ладутько
+                            </h3>
+                            <p>
+                                PR-менеджер, журналист, маркетолог, копирайтер
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/3.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Алёна Иринёва
+                            </h3>
+                            <p>
+                                Совладелица, операционный директор
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/4.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Андрей Голишевский
+                            </h3>
+                            <p>
+                                Специалист по технической поддержке сайтов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/5.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Ксения Новикова
+                            </h3>
+                            <p>
+                                Копирайтер, корректор
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/7.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Ира Липчинская
+                            </h3>
+                            <p>
+                                Специалист по работе с клиентами, координатор рабочих групп
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__item col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                        <img src="img/8.png" alt="">
+                        <div class="team__item-descript">
+                            <h3>
+                                Юля Принцева
+                            </h3>
+                            <p>
+                                Видеограф
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="group-kd">
+    <div class="container">
+        <div class="row">
+            <div class="group-kd__title">
+                <h2>Компании, входящие в рекламную группировку KD</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="swiper group-kd__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-1">
+                            <div class="group-kd__wrapper flex">
+                                <div class="group-kd__contend">
+                                    <div class="group-kd__item-title group-kd__item-bg-img-1">
+                                        <h3>kokovikhin.digital</h3>
+                                        <p>Диджитал-мастерская Kokovikhin.Digital. Специализация компании: реклама в интернете.</p>
+                                    </div>
+                                    <div class="group-kd__descript">
+                                        <p class="group-kd__text">
+                                            Услуги
+                                        </p>
+                                        <ul class="group-kd__list-serv">
+                                            <li class="group-kd__list-item">
+                                                <p>Консультации по рекламе и маркетингу в интернете</p>
+                                            </li>
+                                            <li class="group-kd__list-item">
+                                                <p>Контекстная реклама в Яндекс, Гугл, Инстаграм, Фейсбук, Мейл.ру, Ютуб, ВКонтакте (поисковая, тематическая, поведенческая, таргетированная)</p>
+                                            </li>
+                                            <li class="group-kd__list-item">
+                                                <p>Едийная реклама в Яндекс, Гугл, Ютуб, ТикТок (видео-, аудио-, баннерая)</p>
+                                            </li>
+                                            <li class="group-kd__list-item">
+                                                <p>Поисковая оптимизация</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="group-kd__signature">Вы уже с нами)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-2">
+                    <div class="group-kd__wrapper flex">
+                        <div class="group-kd__contend">
+                            <div class="group-kd__item-title group-kd__item-bg-img-2">
+                                <h3>Селекция — школа рекламных коммуникаций</h3>
+                                <p>
+                                    Smart is Sexy. Блог, подкаст, обучалки о рекламе, маркетинге, дизайне, продукте на краю земли во Владивостоке.
+                                </p>
+                            </div>
+                            <div class="group-kd__descript">
+                                <p class="group-kd__text">
+                                    Для кого
+                                </p>
+                                <div class="group-kd__list-descript">
+                                    <p>
+                                        Селекция — школа для тех, кто считает рекламу и маркетинг своим призванием. Для умных, упёртых, вечно недовольных собой и жадных до новых знаний и нового опыта. Для тех, кто готов выйти за пределы зоны комфорта в поисках открытий и самосовершенствования. Для вечных студентов.
+                                        Для тех, кто готов честно сказать себе, даже имея за плечами годы опыта: «Да, мне ещё расти и расти».
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="group-kd__signature-link" href="">Перейти на сайт</a>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-3">
+                    <div class="group-kd__wrapper flex">
+                        <div class="group-kd__contend">
+                            <div class="group-kd__item-title group-kd__item-bg-img-3">
+                                <h3>Slovo-Slovo! — бюро слов и смыслов</h3>
+                                <p>
+                                    Сообщество людей, умеющих работать со словом:
+                                    журналистов, копирайтеров, корректоров, редакторов, издателей. Придумываем и формируем смыслы.
+                                </p>
+                            </div>
+                            <ul class="group-kd__list-serv">
+                                <li class="group-kd__list-item">
+                                    <p>Пишем и корректируем тексты</p>
+                                </li>
+                                <li class="group-kd__list-item">
+                                    <p>Пишем статьи</p>
+                                </li>
+                                <li class="group-kd__list-item">
+                                    <p>Анализируем информационное поле</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="group-kd__signature-link" href="">Перейти на сайт</a>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-4">
+                    <div class="group-kd__wrapper flex">
+                        <div class="group-kd__contend">
+                            <div class="group-kd__item-title group-kd__item-bg-img-4">
+                                <h3>Comma Games</h3>
+                                <p>
+                                    Сообщество модераторов, тренеров, игропрактиков. Формируем новые мыслесхемы через игры «живого действия».
+                                </p>
+                            </div>
+                            <div class="group-kd__descript">
+                                <p class="group-kd__text">
+                                    О нас
+                                </p>
+                                <div class="group-kd__list-descript">
+                                    <p>
+                                        Специализируемся на проведении игр для компаний. Создаём безопасную игровую среду для развития креативного мышления, командной работы и навыков управления. Моделируем реальные рабочие и жизненные ситуации через игровую механику. Формируем игровую программу с ориентиром на ваши бизнес-цели и HR-задачи
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="group-kd__signature">Сайт в разработке</p>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-5">
+                    <div class="group-kd__wrapper flex">
+                        <div class="group-kd__contend">
+                            <div class="group-kd__item-title group-kd__item-bg-img-5">
+                                <h3>Marketing Agency of Digital Destinations</h3>
+                                <p>
+                                    Cпециализируемся на размещении рекламы в Интернете на Корею, Китай, Японию.
+                                </p>
+                            </div>
+                            <div class="group-kd__descript">
+                                <p class="group-kd__text">
+                                    Для кого
+                                </p>
+                                <div class="group-kd__list-descript">
+                                    <p>
+                                        Ориентируясь на ваши бизнес-цели и маркетинговые-задачи, привлекаем внимание туристов из Южной Кореи, Китая и Японии, интересующихся поездкой в Россию:<br>
+                                        — тех, кто планирует;<br>
+                                        — тех, кто уже летит;<br>
+                                        — тех, кто уже в России;<br>
+                                        — тех, кто вернулся домой — догоняем, напоминаем, возвращаем.<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="group-kd__signature-link" href="">Перейти на сайт</a>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group-kd__item item-6">
+                    <div class="group-kd__wrapper flex">
+                        <div class="group-kd__contend">
+                            <div class="group-kd__item-title group-kd__item-bg-img-6">
+                                <h3>Студия подкастов Zakutokmedia</h3>
+                                <p>
+                                    Подкастерский закуток неравнодушных ребят из Владивостока. Болтаем и пишем в 410 кабинете на Посьетской, 45.
+                                </p>
+                            </div>
+                            <div class="group-kd__descript">
+                                <p class="group-kd__text">
+                                    О нас
+                                </p>
+                                <div class="group-kd__list-descript">
+                                    <p>
+                                        Выпускаем четыре подкаста:<br>
+                                        <a href="#">«Шмаркетинг»</a>, <a href="#">Gosuch</a>, <a href="#">«Пятицентовая поэзия»</a>, <a href="#"> «Богини»</a>.
+                                    </p>
+                                    <p>
+                                        Живём во Владивостоке.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="group-kd__signature-link" href="">Перейти на сайт</a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-btn-prev-group-kd">
+                    <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.0714 23.0001C43.0714 34.3416 33.8773 43.5358 22.5357 43.5358C11.1942 43.5358 2 34.3416 2 23.0001C2 11.6585 11.1942 2.46436 22.5357 2.46435C33.8773 2.46435 43.0714 11.6585 43.0714 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.7848 23L13.2866 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.9268 30.7378C16.9561 28.3867 15.5737 26.7853 13.7657 24.3988C13.1259 23.5544 13.1259 22.4465 13.7657 21.6021C15.5737 19.2156 16.9561 17.6142 19.9268 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+                <div class="swiper-btn-next-group-kd">
+                    <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.99998 23.0001C1.99998 34.3416 11.1941 43.5358 22.5357 43.5358C33.8773 43.5358 43.0714 34.3416 43.0714 23.0001C43.0714 11.6585 33.8773 2.46436 22.5357 2.46435C11.1941 2.46435 1.99998 11.6585 1.99998 23.0001Z" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.2866 23L31.7848 23" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25.1444 30.7378C28.115 28.3867 29.4975 26.7853 31.3055 24.3988C31.9452 23.5544 31.9452 22.4465 31.3055 21.6021C29.4975 19.2156 28.115 17.6142 25.1444 15.2631" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+<!--            <div class="group-kd__list flex">-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__title">
+                <h2>Будем на связи!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer__contact">
+                <ul class="contact__list list-reset flex">
+                    <li class="contact__item contact__item-tel">
+                        <p>Позвонить</p>
+                        <a href="">+7 924 730-15-97</a>
+                    </li>
+                    <li class="contact__item contact__item-email">
+                        <p>Отправить e-mail</p>
+                        <a href=""> kk@kokovikhin.digital</a>
+                    </li>
+                    <li class="contact__item flex">
+                        <div class="contact__item-social">
+                            <a href="">
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="72" height="72" fill="white"/>
+                                    <path d="M36.0001 9C21.1126 9 9.00017 21.1124 9.00017 36C9.00017 40.6487 10.2011 45.2199 12.4785 49.2535L9.04361 61.5091C8.93091 61.9118 9.04009 62.3438 9.33122 62.6431C9.55543 62.8744 9.86065 63 10.1741 63C10.268 63 10.3631 62.9883 10.4558 62.966L23.2467 59.7976C27.1523 61.8942 31.551 63 36.0001 63C50.8876 63 63 50.8876 63 36C63 21.1124 50.8876 9 36.0001 9ZM49.5822 45.5275C49.0047 47.1263 46.2342 48.5855 44.903 48.7816C43.708 48.9565 42.196 49.0316 40.5361 48.5104C39.53 48.1934 38.2387 47.7732 36.5847 47.0677C29.6316 44.1023 25.0909 37.1892 24.7435 36.7325C24.3972 36.2759 21.9132 33.0218 21.9132 29.6538C21.9132 26.2859 23.7034 24.6295 24.3396 23.9439C24.9759 23.2583 25.726 23.087 26.1886 23.087C26.6511 23.087 27.1124 23.0928 27.5174 23.1116C27.9435 23.1327 28.5152 22.9508 29.0775 24.2867C29.6551 25.6578 31.0415 29.0258 31.2129 29.3697C31.3866 29.7125 31.5017 30.1128 31.2716 30.5695C31.0415 31.0261 30.9265 31.3114 30.579 31.7117C30.2315 32.112 29.8511 32.6039 29.5389 32.9114C29.1914 33.253 28.831 33.6228 29.2348 34.3084C29.6387 34.994 31.0298 37.235 33.0911 39.0498C35.7383 41.3812 37.9723 42.1043 38.6649 42.4471C39.3575 42.7899 39.7625 42.7324 40.1663 42.2757C40.5701 41.8179 41.899 40.2766 42.3603 39.5922C42.8217 38.9078 43.2842 39.0205 43.9205 39.2494C44.5567 39.4771 47.9646 41.1323 48.6572 41.4751C49.3498 41.8179 49.8123 41.9893 49.986 42.2746C50.1598 42.5587 50.1598 43.9298 49.5822 45.5275Z" fill="#69EA76"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contact__item-social">
+                            <a href="">
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="72" height="72" fill="white"/>
+                                    <path d="M4.83069 34.932C10.4573 31.8701 16.7382 29.3147 22.6067 26.7462C32.7029 22.5392 42.8392 18.4051 53.0777 14.5563C55.0698 13.9005 58.649 13.2592 59 16.1756C58.8079 20.3037 58.0173 24.4077 57.475 28.5117C56.0986 37.5367 54.5079 46.5308 52.9566 55.5262C52.4221 58.5224 48.6227 60.0735 46.1916 58.1561C40.3491 54.2574 34.4617 50.3967 28.6939 46.4076C26.8045 44.511 28.5565 41.7873 30.2439 40.4329C35.056 35.748 40.1592 31.7677 44.7197 26.8407C45.9499 23.9059 42.3151 26.3793 41.1162 27.1371C34.5285 31.6219 28.102 36.3805 21.1565 40.322C17.6088 42.2513 13.4738 40.6025 9.92767 39.5259C6.74808 38.2254 2.08883 36.9152 4.83037 34.9322L4.83069 34.932Z" fill="#92CAFF"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contact__item-social">
+                            <a href="">
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="72" height="72" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.6525 21.5875C53.6525 23.3771 52.2017 24.8275 50.4125 24.8275C48.6233 24.8275 47.1725 23.3771 47.1725 21.5875C47.1725 19.7979 48.6233 18.3475 50.4125 18.3475C52.2021 18.3475 53.6525 19.7979 53.6525 21.5875ZM36 44.9999C31.0295 44.9999 27.0001 40.9705 27.0001 36C27.0001 31.0295 31.0295 27.0001 36 27.0001C40.9705 27.0001 44.9999 31.0295 44.9999 36C44.9999 40.9705 40.9705 44.9999 36 44.9999ZM36 22.1351C28.3425 22.1351 22.1351 28.3425 22.1351 36C22.1351 43.6575 28.3425 49.8649 36 49.8649C43.6575 49.8649 49.8649 43.6575 49.8649 36C49.8649 28.3425 43.6575 22.1351 36 22.1351ZM36 13.8651C43.2094 13.8651 44.0633 13.8925 46.9101 14.0224C49.5426 14.1427 50.9723 14.5823 51.9237 14.9522C53.1838 15.442 54.0832 16.0272 55.0282 16.9722C55.9732 17.9167 56.5584 18.8162 57.0482 20.0768C57.4177 21.0281 57.8578 22.4578 57.978 25.0903C58.1079 27.9375 58.1354 28.7914 58.1354 36.0008C58.1354 43.2103 58.1079 44.0641 57.978 46.911C57.8578 49.5435 57.4182 50.9732 57.0482 51.9245C56.5584 53.1847 55.9732 54.0841 55.0282 55.0291C54.0837 55.9741 53.1842 56.5592 51.9237 57.049C50.9723 57.4186 49.5426 57.8586 46.9101 57.9788C44.0633 58.1088 43.2094 58.1362 36 58.1362C28.7902 58.1362 27.9363 58.1088 25.0895 57.9788C22.457 57.8586 21.0272 57.419 20.0759 57.049C18.8158 56.5592 17.9163 55.9741 16.9713 55.0291C16.0268 54.0845 15.4412 53.1851 14.9514 51.9245C14.5818 50.9732 14.1418 49.5435 14.0216 46.911C13.8916 44.0637 13.8642 43.2098 13.8642 36.0008C13.8642 28.7914 13.8916 27.9375 14.0216 25.0903C14.1418 22.4578 14.5814 21.0281 14.9514 20.0768C15.4412 18.8166 16.0263 17.9172 16.9713 16.9722C17.9159 16.0272 18.8153 15.442 20.0759 14.9522C21.0272 14.5827 22.457 14.1427 25.0895 14.0224C27.9367 13.8925 28.7906 13.8651 36 13.8651ZM36 9C28.6674 9 27.7477 9.03122 24.868 9.16242C21.9942 9.29362 20.0312 9.75009 18.3142 10.4175C16.5385 11.1073 15.0328 12.0307 13.5318 13.5318C12.0307 15.0328 11.1073 16.5385 10.4175 18.3142C9.75009 20.0316 9.29362 21.9942 9.16242 24.868C9.03122 27.7477 9 28.6674 9 36C9 43.3326 9.03122 44.2523 9.16242 47.132C9.29362 50.0058 9.75009 51.9684 10.4175 53.6858C11.1073 55.4615 12.0307 56.9672 13.5318 58.4682C15.0328 59.9693 16.5385 60.8923 18.3142 61.5825C20.0316 62.2499 21.9942 62.7064 24.868 62.8376C27.7477 62.9688 28.6674 63 36 63C43.3326 63 44.2523 62.9688 47.132 62.8376C50.0058 62.7064 51.9684 62.2499 53.6858 61.5825C55.4615 60.8923 56.9672 59.9693 58.4682 58.4682C59.9693 56.9672 60.8923 55.4615 61.5825 53.6858C62.2499 51.9684 62.7064 50.0058 62.8376 47.132C62.9688 44.2523 63 43.3326 63 36C63 28.6674 62.9688 27.7477 62.8376 24.868C62.7064 21.9942 62.2499 20.0316 61.5825 18.3142C60.8923 16.5385 59.9693 15.0328 58.4682 13.5318C56.9672 12.0307 55.4615 11.1077 53.6858 10.4175C51.9684 9.75009 50.0058 9.29362 47.132 9.16242C44.2523 9.03122 43.3326 9 36 9Z" fill="url(#paint0_radial_99_7)"/>
+                                    <defs>
+                                        <radialGradient id="paint0_radial_99_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.0625 63.1875) scale(68.9985)">
+                                            <stop stop-color="#FFB140"/>
+                                            <stop offset="0.2559" stop-color="#FF5445"/>
+                                            <stop offset="0.599" stop-color="#FC2B82"/>
+                                            <stop offset="1" stop-color="#8E40B7"/>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="working-mode flex">
+                <div class="working-mode__wrapper flex">
+                    <div class="work">
+                        <p>Работаем</p>
+                        <span>
+                        с 10:00 до 18:00
+                    </span>
+                    </div>
+                    <svg width="3" height="63" viewBox="0 0 3 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 0V62.5" stroke="#EBEBEB" stroke-width="2"/>
+                    </svg>
+                    <div class="dinner">
+                        <p>Обедаем</p>
+                        <span>
+                        с 13:00 до 14:00
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="address flex">
+                <div class="headquarters">
+                    <p>Штаб-квартира</p>
+                    <address>
+                        Владивосток, Посьетская, 45, 4 этаж, левое крыло, офис 410
+                    </address>
+                </div>
+                <div class="additional">
+                    <p>Дополнительный офис</p>
+                    <address>
+                        Остров Русский, ДВФУ, корпус А, 11 этаж, технопарк «Русский»
+                    </address>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script  src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script>
+    // swiper element
+
+
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 4,
+    //     spaceBetween: 30,
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         type: 'bullets',
+    //         // dynamicMainBullets: 4,
+    //     },
+    //     // scrollbar: {
+    //     //     el: '.swiper-scrollbar',
+    //     //     draggable: 4,
+    //     // },
+    // });
+    // swiper parameters
+
+    // const swiperEl = document.querySelector('swiper-container');
+    // const swiperParams = {
+    //     slidesPerView: 4,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //         dynamicBullets: true,
+    //         dynamicMainBullets: 4,
+    //     },
+    //     spaceBetween: 40,
+    //     breakpoints: {
+    //         375: {
+    //             slidesPerView: 1,
+    //         },
+    //         375: {
+    //             slidesPerView: 4,
+    //         },
+    //     },
+    //       autoplay: {
+    //           delay: 3000,
+    //       },
+    //
+    // };
+
+    // now we need to assign all parameters to Swiper element
+    // Object.assign(swiperEl, swiperParams);
+
+    // and now initialize it
+    // swiperEl.initialize();
+</script>
+<script src="libs/accordion.min.js"></script>
+<script src="js/index.js">
+
+</script>
+</body>
+</html>
